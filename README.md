@@ -1,30 +1,27 @@
-# TalentFlow hiring platform
+# TalentFlow – A Mini Hiring Platform
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+A **front-end React application** simulating a hiring platform for HR teams.  
+It enables managing **jobs, candidates, and assessments** with realistic API behavior using MirageJS/MSW and local persistence via IndexedDB.  
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/khandelwalprince04-gmailcoms-projects/v0-talent-flow-hiring-platform)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/BI0JwUd4H9d)
+---
 
-## Overview
+## 🚀 Features
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+### 📌 Jobs
+- Create, edit, archive/unarchive jobs  
+- Reorder via drag-and-drop (optimistic updates & rollback)  
+- Pagination & filtering (title, status, tags)  
+- Deep linking to `/jobs/:jobId`  
 
-## Deployment
+### 👤 Candidates
+- Virtualized list of 1000+ seeded candidates  
+- Search (name/email) & filter by stage  
+- Candidate profile with timeline of status changes  
+- Kanban board for stage transitions (drag-and-drop)  
+- Notes with `@mentions` (local suggestions only)  
 
-Your project is live at:
-
-**[https://vercel.com/khandelwalprince04-gmailcoms-projects/v0-talent-flow-hiring-platform](https://vercel.com/khandelwalprince04-gmailcoms-projects/v0-talent-flow-hiring-platform)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.app/chat/projects/BI0JwUd4H9d](https://v0.app/chat/projects/BI0JwUd4H9d)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+### 📝 Assessments
+- Assessment builder per job (single-choice, multi-choice, text, numeric, file upload stub)  
+- Live preview of fillable form  
+- Validation rules & conditional questions  
+- Persist builder state and responses locally  
